@@ -1,0 +1,42 @@
+
+.hero-section {
+  height: 30vh;
+  background: url('https://via.placeholder.com/1600x800') center center/cover no-repeat;
+  position: relative;
+}
+.hero-section .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+/* پیش‌فرض برای صفحه‌های بزرگ‌تر */
+.card {
+  font-size: 20px;
+  padding: 32px;
+}
+
+/* برای صفحه‌های کوچکتر از 600px (موبایل) */
+@media (max-width: 600px) {
+  .card {
+    font-size: 16px;
+    padding: 16px;
+  }
+}
+
+  .badge-available {
+      background-color: #28a745;
+      color: white;
+    }
+    .badge-unavailable {
+      background-color: #dc3545;
+      color: white;
+    }
